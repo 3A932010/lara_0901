@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            table->boolean('is_feature')->default(false)->after('content');
+            $table->boolean('is_feature')->default(false)->after('content');
         });
     }
 
